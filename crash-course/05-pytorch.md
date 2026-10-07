@@ -160,7 +160,7 @@ when heads differ (fine-tuning).
 
 - `torch.autocast` runs matmuls/convs in bf16/fp16 and keeps reductions, softmax, losses,
   norms in fp32. Weights stay fp32 (master copy) — updates are applied in fp32.
-- **fp16** needs `torch.cuda.amp.GradScaler` (scale the loss up so small gradients don't
+- **fp16** needs `torch.amp.GradScaler("cuda")` (scale the loss up so small gradients don't
   underflow to zero, unscale before clipping/stepping, skip steps with inf). **bf16** needs
   no scaler (fp32's range), so on Ampere+ it's the default.
 - `torch.backends.cuda.matmul.allow_tf32 = True` (or `set_float32_matmul_precision("high")`)
