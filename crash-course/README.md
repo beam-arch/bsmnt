@@ -12,6 +12,15 @@ Level 3 is where real experience shows. Every module here is written so you can 
 at level 3, and every module ends with the **"experience signals"** — the things people
 only learn from being burned in production — and the **follow-up chains** interviewers use.
 
+**Read this before the modules:** modules 01–11 are the *breadth* layer — accurate,
+necessary vocabulary, and the same canon every prep guide contains. The *depth* layer is
+[12-depth-layer.md](12-depth-layer.md) plus `code/10`–`code/12`: mechanisms you can
+derive predictions from, each backed by an experiment you run yourself, and a
+[lab notebook](notebook-template.md) that turns those runs into true, citable experience.
+The "experience signals" sections in 01–09 coach phrasings about habits you do not have;
+treat them as *things you now understand*, and use notebook statements instead
+(12 §1 and §7 explain how). If your time is short, the depth layer outranks modules 07 and 11.
+
 ## The honest strategy (read this first)
 
 In 12 hours you will not become a senior ML engineer, and an experienced interviewer will
@@ -62,11 +71,15 @@ order is at the bottom.
 | 7:30–8:30 | [07 Architectures & LLMs](07-architectures-and-llms.md) | Transformers in depth, fine-tuning, inference, RAG |
 | 8:30–9:45 | [08 Recommendation systems](08-recommendation-systems.md) + `code/05_matrix_factorization_recsys.py`, `code/06_two_tower_recsys.py` | Full industrial funnel; this is where "experience" questions concentrate |
 | 9:45–10:30 | [09 ML systems & MLOps](09-ml-systems-and-mlops.md) | Train/serve skew, monitoring, drift, incidents |
-| 10:30–11:30 | [10 Interview playbook](10-interview-playbook.md) | Question bank with level-3 answers, design template, scripts |
-| 11:30–12:00 | [11 Flashcards](11-flashcards.md) | Rapid recall pass |
+| 10:30–11:00 | [10 Interview playbook](10-interview-playbook.md) | Question bank with level-3 answers, design template, scripts |
+| 11:00–12:00 | [12 Depth layer](12-depth-layer.md) + `code/10`–`code/12` + [notebook](notebook-template.md) | Mechanisms, predictions, and your own measured numbers; this is what survives a depth probe |
+| spare | [11 Flashcards](11-flashcards.md) | Rapid recall pass |
 
-**Triage order if time runs out:** 03 → 10 → 04 → 05 → 08 → 06 → 09 → 01 → 07 → 02 → 11.
+**Triage order if time runs out:** 03 → 12 (§4, §2.2–2.3, §5.2/5.6, §3.4 with their
+scripts) → 10 → 04 → 05 → 08 → 06 → 09 → 01 → 07 → 02 → 11.
 If you have a coding screen, move 01 to second place.
+
+**Already read the modules?** Spend the remaining time on 12 and the notebook only.
 
 **Sleep:** if the interview is right after the 12 hours, trade the last 2–3 hours of study
 for sleep. Sleep-deprived reasoning loses more interviews than missing module 07 does.
@@ -88,8 +101,9 @@ uv pip install --python .venv/bin/python torch --index-url https://download.pyto
 
 1. Read it once straight through (don't take notes yet).
 2. Run the script, read the script's comments — they are part of the lesson.
-3. Go back to the **Experience signals** and **Follow-up chains** sections and say the
-   answers out loud. Out loud. Interviews are spoken.
+3. Go back to the **Follow-up chains** and say the answers out loud. Out loud. Interviews
+   are spoken. Read the **Experience signals** as "things I now understand", never as
+   claims about habits; the notebook entries from 12 are what you cite as experience.
 4. Move on. Do not rabbit-hole; the flashcards will catch what slipped.
 
 ## The one-paragraph mental model of the whole field
